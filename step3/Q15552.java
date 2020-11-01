@@ -5,35 +5,31 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class Q15552 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		BufferedReader in = null;
-		BufferedWriter out = null;
-		int t=0, a=0, b=0;
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		StringTokenizer st;
 		
-		in = new BufferedReader(new InputStreamReader(System.in));
-		out = new BufferedWriter(new OutputStreamWriter(System.out));
+		int n = Integer.parseInt(in.readLine()), a=0, b=0, res=0;
 		
-		try {
-			t = in.read();
-			for(int i=0; i<t; i++) {
-				a = in.read();
-				b = in.read();
-				out.write(a+b);
-			}
-			out.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if(out!=null) out.close();
-				if(in!=null) in.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		
+		for(int i=0; i<n; i++) {
+			
+			st = new StringTokenizer(in.readLine());
+			
+			a = Integer.parseInt(st.nextToken());
+			b = Integer.parseInt(st.nextToken());
+			res = a + b;
+			
+			out.write(res + "\n");
 		}
+		
+		out.flush();
 		
 	}
 }
