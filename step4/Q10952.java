@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Q1110 {
+public class Q10952 {
 	public static void main(String[] args) throws IOException {
 		
 		// IO 객체 선언과 동시에 초기화
