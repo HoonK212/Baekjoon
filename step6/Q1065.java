@@ -20,8 +20,11 @@ public class Q1065 {
  
 		// num이 10의 자리 숫자인 경우, num을 return
 		if (num < 100) {
+			
 			return num;
+			
 		} else {
+			
 			cnt = 99;
 			
 			if (num == 1000) {
@@ -30,6 +33,7 @@ public class Q1065 {
 			}
  
 			for (int i = 100; i <= num; i++) {
+				
 				int hun = i / 100; // 100의 자리 수
 				int ten = (i / 10) % 10; // 10의 자리 수
 				int one = i % 10; // 1의 자리 수
@@ -43,5 +47,4 @@ public class Q1065 {
  
 		return cnt;
 	}
-		
 }
