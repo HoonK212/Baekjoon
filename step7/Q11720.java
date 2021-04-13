@@ -1,4 +1,4 @@
-package baekjoon.step7;
+package step7;
 
 import java.util.Scanner;
 

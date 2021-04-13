@@ -1,4 +1,4 @@
-package baekjoon.step5;
+package step5;
 
 import java.io.BufferedReader;
 import java.io.IOException;

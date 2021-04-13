@@ -1,4 +1,4 @@
-package baekjoon.step6;
+package step6;
 
 public class Q15596 {
 	public static void main(String[] args) {
